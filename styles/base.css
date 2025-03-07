@@ -61,6 +61,10 @@ nav ul li a:hover {
     border: 3px solid #28a745; 
 }
 
+.card p{
+    text-align: justify;
+}
+
 footer {
     margin-top: 20px;
     padding: 10px;
