@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Ghana</title>
+    <meta name="description" content="A webpage about Ghana, featuring its culture, history, and weather.">
+    <meta name="author" content="Uriyah">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script defer src="scripts/place.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Discover Ghana</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Culture</a>
+            <a href="#">Tourism</a>
+            <a href="#">Weather</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section with Responsive Images -->
+        <section class="hero">
+            <picture>
+                <source srcset="images/ghana-small.webp" media="(max-width: 500px)">
+                <source srcset="images/ghana-medium.webp" media="(max-width: 1000px)">
+                <img src="images/ghana-large.webp" alt="A scenic view of Ghana">
+            </picture>
+        </section>
+
+        <!-- About Ghana Section -->
+        <section class="about">
+            <h2>Welcome to Ghana</h2>
+            <p>Ghana, known for its rich history, diverse culture, and breathtaking landscapes, is a country in West Africa. From bustling markets in Accra to the historic Cape Coast castles, Ghana offers a mix of tradition and modernity.</p>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather">
+            <h2>Weather <span class="weather-icon">⛅</span></h2>
+            <p>Temperature: <span id="temperature">28</span>°C</p>
+            <p>Wind Speed: <span id="wind-speed">10</span> km/h</p>
+            <p>Wind Chill: <span id="wind-chill">Calculating...</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Discover Ghana | Last Updated: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+</html>
