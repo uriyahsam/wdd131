@@ -1,0 +1,91 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Navigation */
+.hamburger {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    background: #444;
+    padding: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    display: block;
+}
+
+nav a:hover {
+    background: #555;
+}
+
+/* Show menu when active */
+nav.active {
+    display: flex;
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+figure {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+figure img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+}
